@@ -1,0 +1,42 @@
+{
+  "name": "@zephyrdb/browser",
+  "version": "0.1.0",
+  "description": "Official JavaScript client for ZephyrDB - serverless database built for developers who move fast",
+  "main": "dist/zephyr-db.js",
+  "module": "src/index.js",
+  "browser": "dist/zephyr-db.min.js",
+  "unpkg": "dist/zephyr-db.min.js",
+  "jsdelivr": "dist/zephyr-db.min.js",
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "database",
+    "serverless",
+    "realtime",
+    "websocket",
+    "edge",
+    "zephyrdb"
+  ],
+  "author": "Victor Chanet <victor@zephyrdb.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zephyr-DB/ZephyrDB-Browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zephyr-DB/ZephyrDB-Browser/issues"
+  },
+  "homepage": "https://zephyrdb.com",
+  "publishConfig": {
+    "access": "public"
+  }
+}
